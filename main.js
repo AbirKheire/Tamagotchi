@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     nameDisplay.textContent = newTamagatchi.name;
 
+    
     let drain = setInterval(function() {
       hungerLevelElem.textContent = newTamagatchi.foodLevel;
       sleepLevelElem.textContent = newTamagatchi.sleepLevel;
