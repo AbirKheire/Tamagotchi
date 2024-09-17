@@ -1,4 +1,4 @@
-const totalBlocks = 7; 
+const totalBlocks = 8; 
 let activeBlocksFood = 6;
 let activeBlocksSport = 6;
 let activeBlocksHealth = 6;
