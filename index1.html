@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi </title>
+    <style>
+        .sprite {
+            width: 128px; /* Width of one frame */
+            height: 128px; /* Height of the frame */
+            background-image: url('Red_Slime/Idle.png'); /* Path to your image */
+            background-repeat: no-repeat;
+            animation: play 1s steps(8) infinite; /* Adjust the number of steps to the number of frames */
+        }
+
+        @keyframes play {
+            from { background-position: 0px; }
+            to { background-position: -1024px; } /* Move through all frames */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="ovale">
+            <p class="text1">Tamagotchi</p>
+        </div>
+    </header>
+    <main class="padding-zuo-20 padding-you-60 padding-gao-80 padding-di-66">
+        <div class="container padding-10">
+            <div class="status-bars">
+                <div class="status-bar">
+                    <div class="status-label">Food</div>
+                    <div class="progress-container" id="progress-food"></div>
+                </div>
+                <div class="status-bar">
+                    <div class="status-label">Sport</div>
+                    <div class="progress-container" id="progress-sport"></div>
+                </div>
+                <div class="status-bar">
+                    <div class="status-label">Health</div>
+                    <div class="progress-container" id="progress-health"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="jaune" onclick="feed()">Feed</button>
+                <button class="orange" onclick="exercise()">Sport</button>
+                <button class="rouge" onclick="heal()">Health</button>
+            </div>
+        </div>
+        <div class="animation-block padding-5">
+            <div class="sprite"></div>
+        </div>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
