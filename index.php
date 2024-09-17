@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style1.css">
     <script type="module" src="tamagotchi.js"></script>
-    <script src="main.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamagotchi</title>
     <link rel="stylesheet" href="css/style.css">
@@ -75,10 +74,10 @@
             </div>
             <br>
             <div class="buttons">
-                <button class="jaune" onclick="feed()">Feed</button>
-                <button class="orange" onclick="exercise()">Sport</button>
-                <button class="rouge" onclick="heal()">Health</button>
-
+                <button class="jaune">Feed</button>
+                <button class="orange">Sport</button>
+                <button class="rouge">Health</button>
+<!-- onclick="heal()" onclick="exercise()" onclick="feed()" -->
             </div>
             <div class="buttons2">
                 <button class="begin" id="begin">Begin</button>
@@ -91,5 +90,5 @@
     <footer>
     </footer>
 </body>
-
+<script src="main.js"></script>
 </html>
