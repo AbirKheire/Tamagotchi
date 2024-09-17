@@ -1,8 +1,6 @@
 import { Tamagatchi } from './tamagatchi.js';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css';
 
+console.log('reussi')
 
 document.getElementById('begin').addEventListener('click', function() {
   
