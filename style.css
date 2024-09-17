@@ -1,0 +1,75 @@
+/* 外层容器的样式 */
+.progress-container {
+    width: 300px;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    padding: 5px;
+}
+
+/* 单个进度块的样式 */
+.progress-block {
+    width: 30px;
+    height: 100%;
+    background-color: #dcdcdc; /* 默认的灰色 */
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+/* 已完成的进度块的样式 */
+.progress-block.active {
+    background-color: #8cd659;
+}
+
+.bianzy-15px {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.rouge{
+    background-color: rgb(253, 91, 91);
+}
+
+.orange{
+    background-color: rgb(251, 172, 25);
+}
+
+.jaune{
+    background-color: rgb(245, 240, 94);
+}
+
+
+/* body, html {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+header {
+    background-color: #4CAF50; /* Green */
+/* }
+
+
+.status-bars div {
+    margin: 10px 0;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+progress {
+    width: 100%;
+} */ 
