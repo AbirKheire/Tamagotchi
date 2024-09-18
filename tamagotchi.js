@@ -1,4 +1,4 @@
-export class Tamagotchi
+class Tamagotchi
 {
 
   constructor(name)
@@ -62,3 +62,5 @@ export class Tamagotchi
 
 
 }
+
+export {Tamagotchi}

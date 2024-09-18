@@ -1,4 +1,4 @@
-//import { Tamagotchi } from './tamagotchi.js';
+import { Tamagotchi } from './tamagotchi.js';
 
 console.log('reussi');
 
@@ -20,7 +20,7 @@ document.getElementById('begin').addEventListener('click', function() {
     return;
   }
 
-  let newTamagotchi = new tamagotchi(nameOfSlime);
+  let newTamagotchi = new Tamagotchi(nameOfSlime);
   
   // Drains automatiques pour chaque niveau
   newTamagotchi.hungerDrain();
