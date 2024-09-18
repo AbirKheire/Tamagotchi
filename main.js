@@ -1,4 +1,4 @@
-import { Tamagatchi } from './tamagatchi.js';
+//import { Tamagotchi } from './tamagotchi.js';
 
 console.log('reussi')
 
@@ -20,12 +20,12 @@ document.getElementById('begin').addEventListener('click', function() {
       return;
   }
 
-  let newTamagatchi = new Tamagatchi(nameOfSlime);
+  let newTamagotchi = new Tamagotchi(nameOfSlime);
   
   // Drains automatiques pour chaque niveau
-  newTamagatchi.hungerDrain();
-  newTamagatchi.healthDrain();
-  newTamagatchi.sportDrain();
+  newTamagotchi.hungerDrain();
+  newTamagotchi.healthDrain();
+  newTamagotchi.sportDrain();
 
   
 
@@ -34,8 +34,8 @@ document.getElementById('begin').addEventListener('click', function() {
     let hungerLevelBlocks = hungerLevelElem.querySelectorAll('.progress-block');
     hungerLevelBlocks.forEach((block, index) => {
       block.classList.remove('');  // On supprime les anciennes classes
-      if (index < newTamagatchi.foodLevel) {
-        if (newTamagatchi.foodLevel <=8 ) {
+      if (index < newTamagotchi.foodLevel) {
+        if (newTamagotchi.foodLevel <=8 ) {
           block.classList.add('');
         }
       }
@@ -45,8 +45,8 @@ document.getElementById('begin').addEventListener('click', function() {
     let sportLevelBlocks = sportLevelElem.querySelectorAll('.progress-block');
     sportLevelBlocks.forEach((block, index) => {
       block.classList.remove('');
-      if (index < newTamagatchi.sportLevel) {
-        if (newTamagatchi.sportLevel <= 8) {
+      if (index < newTamagotchi.sportLevel) {
+        if (newTamagotchi.sportLevel <= 8) {
           block.classList.add('');
         }
       }
@@ -56,18 +56,18 @@ document.getElementById('begin').addEventListener('click', function() {
     let healthLevelBlocks = healthLevelElem.querySelectorAll('.progress-block');
     healthLevelBlocks.forEach((block, index) => {
       block.classList.remove('');
-      if (index < newTamagatchi.healthLevel) {
-        if (newTamagatchi.healthLevel <= 8) {
+      if (index < newTamagotchi.healthLevel) {
+        if (newTamagotchi.healthLevel <= 8) {
           block.classList.add('');
         }
       }
     });
   
     // Vérification si le Tamagotchi est mort
-    if (newTamagatchi.didTamagatchiDie()) {
+    if (newTamagotchi.didTamagotchiDie()) {
       clearInterval(drain);
       document.querySelectorAll('.progress-block').forEach((block) => block.classList.remove('yellow', 'orange', 'red'));
-      newTamagatchi = null;
+      newTamagotchi = null;
       alert('fin de la partie');
       return;
     }
@@ -75,24 +75,24 @@ document.getElementById('begin').addEventListener('click', function() {
   
   // Événements sur les boutons pour augmenter les niveaux
   jaune.addEventListener('click', function() {
-    newTamagatchi.feed();
+    newTamagotchi.feed();
     updateBars();  // Mise à jour des blocs après interaction
   });
 
   orange.addEventListener('click', function() {
-    newTamagatchi.sport();
+    newTamagotchi.sport();
     updateBars();
   });
 
   rouge.addEventListener('click', function() {
-    newTamagatchi.health();
+    newTamagotchi.health();
     updateBars();
   });
 
   
   document.getElementById('reset').addEventListener('click', function() {
     document.querySelectorAll('.progress-block').forEach((block) => block.classList.remove('yellow', 'orange', 'red'));
-    newTamagatchi = null;
+    newTamagotchi = null;
     alert('fin de la partie');
     return;
   });
