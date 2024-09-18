@@ -18,7 +18,7 @@ document.getElementById('begin').addEventListener('click', function() {
   if(!/^[A-Za-zÀ-ÖØ-öø-ÿ ]+$/.test(nameOfSlime)){
     alert('Nom invalide');
     return;
-  }
+  };
 
   let newTamagotchi = new Tamagotchi(nameOfSlime);
   
