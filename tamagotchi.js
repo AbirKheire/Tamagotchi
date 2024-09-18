@@ -50,8 +50,7 @@ class Tamagotchi
     this.sportLevel += 1;
   }
 
-
-  didTamagatchiDie()
+  didTamagotchiDie()
   {
     if(this.foodLevel === 0 || this.healthLevel === 0 || this.sportLevel === 0)
     {
