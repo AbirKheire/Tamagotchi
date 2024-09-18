@@ -1,6 +1,6 @@
 //import { Tamagotchi } from './tamagotchi.js';
 
-console.log('reussi')
+console.log('reussi');
 
 document.getElementById('begin').addEventListener('click', function() {
   
@@ -16,11 +16,11 @@ document.getElementById('begin').addEventListener('click', function() {
 
   // Vérification du nom du Slime
   if(!/^[A-Za-zÀ-ÖØ-öø-ÿ ]+$/.test(nameOfSlime)){
-      alert('Nom invalide');
-      return;
+    alert('Nom invalide');
+    return;
   }
 
-  let newTamagotchi = new Tamagotchi(nameOfSlime);
+  let newTamagotchi = new tamagotchi(nameOfSlime);
   
   // Drains automatiques pour chaque niveau
   newTamagotchi.hungerDrain();
@@ -33,10 +33,10 @@ document.getElementById('begin').addEventListener('click', function() {
     // Mise à jour des blocs de nourriture
     let hungerLevelBlocks = hungerLevelElem.querySelectorAll('.progress-block');
     hungerLevelBlocks.forEach((block, index) => {
-      block.classList.remove('');  // On supprime les anciennes classes
+      block.classList.remove('active');  // On supprime les anciennes classes
       if (index < newTamagotchi.foodLevel) {
         if (newTamagotchi.foodLevel <=8 ) {
-          block.classList.add('');
+          block.classList.add('active');
         }
       }
     });
@@ -44,10 +44,10 @@ document.getElementById('begin').addEventListener('click', function() {
     // Mise à jour des blocs de sport
     let sportLevelBlocks = sportLevelElem.querySelectorAll('.progress-block');
     sportLevelBlocks.forEach((block, index) => {
-      block.classList.remove('');
+      block.classList.remove('active');
       if (index < newTamagotchi.sportLevel) {
         if (newTamagotchi.sportLevel <= 8) {
-          block.classList.add('');
+          block.classList.add('active');
         }
       }
     });
@@ -55,10 +55,10 @@ document.getElementById('begin').addEventListener('click', function() {
     // Mise à jour des blocs de santé
     let healthLevelBlocks = healthLevelElem.querySelectorAll('.progress-block');
     healthLevelBlocks.forEach((block, index) => {
-      block.classList.remove('');
+      block.classList.remove('active');
       if (index < newTamagotchi.healthLevel) {
         if (newTamagotchi.healthLevel <= 8) {
-          block.classList.add('');
+          block.classList.add('active');
         }
       }
     });
@@ -91,7 +91,7 @@ document.getElementById('begin').addEventListener('click', function() {
 
   
   document.getElementById('reset').addEventListener('click', function() {
-    document.querySelectorAll('.progress-block').forEach((block) => block.classList.remove('yellow', 'orange', 'red'));
+    document.querySelectorAll('.progress-block').forEach((block) => block.classList.remove('active'));
     newTamagotchi = null;
     alert('fin de la partie');
     return;
