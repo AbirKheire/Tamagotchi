@@ -1,4 +1,4 @@
-export class Tamagotchi
+class Tamagotchi
 {
 
   constructor(name)
@@ -50,8 +50,7 @@ export class Tamagotchi
     this.sportLevel += 1;
   }
 
-
-  didTamagatchiDie()
+  didTamagotchiDie()
   {
     if(this.foodLevel === 0 || this.healthLevel === 0 || this.sportLevel === 0)
     {
@@ -62,3 +61,5 @@ export class Tamagotchi
 
 
 }
+
+export {Tamagotchi}

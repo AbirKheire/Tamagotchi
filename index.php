@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style1.css">
-    <script type="module" src="tamagotchi.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamagotchi</title>
     <link rel="stylesheet" href="css/style.css">
@@ -90,5 +89,5 @@
     <footer>
     </footer>
 </body>
-<script src="main.js"></script>
+<script type="module" src="main.js"></script>
 </html>
