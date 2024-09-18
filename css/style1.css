@@ -109,13 +109,13 @@ footer {
 }
 
 /* Style pour les blocs actifs */
-.progress-block.active {
+.progress-block .active {
     background-color: #8cd659; /* Couleur active des blocs */
 }
 
-.progress-block.active {
+/* .progress-block.active {
     background-color: blue;
-}
+} */
 
 /* Styles pour la disposition générale */
 
