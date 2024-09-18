@@ -16,7 +16,7 @@ export class Tamagatchi
     setInterval(() =>
     {
         this.foodLevel-=1;
-    }, 1000);
+    }, 10000);
   }
 
   healthDrain()
@@ -24,15 +24,15 @@ export class Tamagatchi
     setInterval(() =>
     {
         this.healthLevel-=1;
-    }, 1000);
+    }, 10000);
   }
 
   sportDrain()
   {
     setInterval(() =>
     {
-        this.sportLevel-=1;
-    }, 1000);
+      this.sportLevel-=1;
+    }, 10000);
   }
 
 
