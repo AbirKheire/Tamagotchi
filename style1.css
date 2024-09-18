@@ -64,6 +64,8 @@
     width: 50px;
     text-align: left;
     margin-right: 10px;
+    font-family: "Lucida Console", sans-serif;
+
 }
 
 .buttons {
@@ -152,7 +154,7 @@ footer {
 .progress-container {
     width: 280px;
     height: 20px;
-    background-color: #eee;
+    background-color: #ffffff;
     border-radius: 10px;
     display: flex;
     padding: 5px;
@@ -171,6 +173,12 @@ footer {
 .progress-block.active {
     background-color: blue;
 }
+
+.progress-block.activeVert {
+    background-color: rgb(17, 207, 61);
+}
+
+
 
 .bianzy-15px {
     margin-left: 15px;
